@@ -1,0 +1,16 @@
+<!--
+  Optional reusable arrow asset (right arrow)
+  Usage in CMS: insert as an <img> or <object> between steps, or copy its <svg> content inline.
+-->
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <style>
+    :root { color: #212121; }
+    path { stroke: currentColor; }
+  </style>
+  <path d="M4 12h14" fill="none" stroke-width="2" stroke-linecap="round" />
+  <path d="M13 6l6 6-6 6" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  <title>Right arrow</title>
+  <desc>Simple right-pointing arrow for process diagrams</desc>
+</svg>
+
+
