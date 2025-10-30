@@ -17,20 +17,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "Acumin Pro";
-  src: url("./assets/fonts/AcuminPro-Semibold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Acumin Pro";
-  src: url("./assets/fonts/AcuminPro-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
 
 :root {
   --purdue-gold: #CFB991;
@@ -52,6 +38,7 @@ body {
   color: var(--block-text-color);
   background: #fff;
   font-size: 18pt;
+  font-weight: 400;
 }
 
 .audit-process-diagram {
@@ -94,12 +81,14 @@ body {
   margin: 0 0 8px 0;
   font-size: 18pt;
   line-height: 1.25;
+  font-weight: 400;
 }
 
 .process-step p {
   margin: 0;
   font-size: 18pt;
   line-height: 1.45;
+  font-weight: 400;
 }
 
 .step-badge {
