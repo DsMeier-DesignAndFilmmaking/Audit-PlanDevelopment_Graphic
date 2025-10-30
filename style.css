@@ -5,7 +5,32 @@
   - Change colors via CSS variables in :root below.
   - Duplicate a `.process-step` and adjacent `.arrow` to add more steps.
   - For CMS usage (WordPress/Cascade), include this stylesheet or paste into a custom CSS block.
+  - To use Acumin Pro via Adobe Fonts, include the kit <link> in index.html head.
+  - To self-host, place WOFF2 files under ./assets/fonts and define @font-face.
 */
+
+/* Self-hosted Acumin Pro (place files under ./assets/fonts/) */
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("./assets/fonts/AcuminPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("./assets/fonts/AcuminPro-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Acumin Pro";
+  src: url("./assets/fonts/AcuminPro-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --purdue-gold: #CFB991;
@@ -23,7 +48,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: "Acumin Pro", -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--block-text-color);
   background: #fff;
 }
@@ -52,7 +77,9 @@ body {
   padding: 18px calc(var(--chevron-size) + 18px) 16px 18px; /* keep text away from arrow tip */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   /* Right-pointing arrow shape */
   -webkit-clip-path: polygon(
     0% 0%, calc(100% - var(--chevron-size)) 0%, 100% 50%, calc(100% - var(--chevron-size)) 100%, 0% 100%, var(--chevron-size) 50%
@@ -75,7 +102,7 @@ body {
 }
 
 .step-badge {
-  align-self: flex-start;
+  align-self: center;
   display: inline-grid;
   place-items: center;
   width: 36px;
