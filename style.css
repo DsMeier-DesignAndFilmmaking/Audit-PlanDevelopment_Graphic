@@ -37,7 +37,7 @@ body {
   font-family: "Acumin Pro", -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--block-text-color);
   background: #fff;
-  font-size: 18pt;
+  font-size: 10.8pt;
   font-weight: 400;
 }
 
@@ -62,12 +62,12 @@ body {
   background: var(--purdue-gold);
   border-radius: var(--block-border-radius);
   box-shadow: var(--block-shadow);
-  padding: 18px calc(var(--chevron-size) + 18px) 16px 18px; /* keep text away from arrow tip */
+  padding: 18px calc(var(--chevron-size) + 18px) 16px 54px; /* keep text away from arrow tip */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   /* Right-pointing arrow shape */
   -webkit-clip-path: polygon(
     0% 0%, calc(100% - var(--chevron-size)) 0%, 100% 50%, calc(100% - var(--chevron-size)) 100%, 0% 100%, var(--chevron-size) 50%
@@ -79,14 +79,14 @@ body {
 
 .process-step h3 {
   margin: 0 0 8px 0;
-  font-size: 18pt;
+  font-size: 10.8pt;
   line-height: 1.25;
   font-weight: 400;
 }
 
 .process-step p {
   margin: 0;
-  font-size: 18pt;
+  font-size: 10.8pt;
   line-height: 1.45;
   font-weight: 400;
 }
